@@ -14,7 +14,7 @@ class JavascriptInstaller extends LibraryInstaller {
     public function __construct(IOInterface $io, Composer $composer, $type = 'library') {
         parent::__construct($io, $composer, $type);
 
-        $extra = $this->composer->package->getExtra();
+        $extra = $this->composer->getPackage()->getExtra();
         if(isset($extra['javascript-dir'])) {
             $this->javascriptDir = $extra['javascript-dir'];
         } else {
