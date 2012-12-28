@@ -11,16 +11,17 @@ class JavascriptInstaller extends LibraryInstaller {
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package) {
-        var_dump($package);
-        throw new \Exception("asdf");
+        if(isset($package->extra['javascript-path'])) {
+            return $package->extra['javascript-path'];
+        } else {
+            throw new \InvalidArgumentException("javascript-path must be defined in extra");
+        }
     }
 
     /**
      * {@inheritDoc}
      */
     public function supports($packageType) {
-        echo "Package Type is {$packageType}\n";
-        echo "Matches? " . ('javascript-library' === $packageType ? 'Yes' : 'No') . "\n";
         return 'javascript-library' === $packageType;
     }
 
