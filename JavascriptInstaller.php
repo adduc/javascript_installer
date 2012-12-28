@@ -5,13 +5,14 @@ namespace Adduc/JavascriptInstaller;
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
 
-class JavascriptInstaller {
+class JavascriptInstaller extends LibraryInstaller {
 
     /**
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package) {
-        
+        var_dump($package);
+        throw new \Exception("asdf");
     }
 
     /**
