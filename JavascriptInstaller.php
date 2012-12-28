@@ -1,6 +1,6 @@
 <?php
 
-namespace Adduc/JavascriptInstaller;
+namespace Adduc\JavascriptInstaller;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;
