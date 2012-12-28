@@ -13,7 +13,7 @@
         "files": ["JavascriptInstaller.php"]
     },
     "extra": {
-        "class": "\\Adduc\\JavascriptInstaller\\JavascriptInstaller"
+        "class": "Adduc\\JavascriptInstaller\\JavascriptInstaller"
     },
     "require": {
 
