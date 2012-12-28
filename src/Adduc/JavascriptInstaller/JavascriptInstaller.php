@@ -2,8 +2,12 @@
 
 namespace Adduc\JavascriptInstaller;
 
-use Composer\Package\PackageInterface;
+use Composer\Composer;
 use Composer\Installer\LibraryInstaller;
+use Composer\IO\IOInterface;
+use Composer\Package\PackageInterface;
+
+
 
 class JavascriptInstaller extends LibraryInstaller {
 
