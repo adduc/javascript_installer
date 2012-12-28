@@ -11,10 +11,11 @@ class JavascriptInstaller extends LibraryInstaller {
      * {@inheritDoc}
      */
     public function getInstallPath(PackageInterface $package) {
-        if(isset($package->extra['javascript-path'])) {
-            return $package->extra['javascript-path'];
+        $extra = $package->getExtra();
+        if(isset($extra['javascript-dir'])) {
+            return $extra['javascript-dir'];
         } else {
-            throw new \InvalidArgumentException("javascript-path must be defined in extra");
+            throw new \InvalidArgumentException("javascript-dir must be defined in extra");
         }
     }
 
