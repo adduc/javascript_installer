@@ -7,8 +7,6 @@ use Composer\Installer\LibraryInstaller;
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
 
-
-
 class JavascriptInstaller extends LibraryInstaller {
 
     public function __construct(IOInterface $io, Composer $composer, $type = 'library') {
@@ -18,11 +16,9 @@ class JavascriptInstaller extends LibraryInstaller {
         if(isset($extra['javascript-dir'])) {
             $this->javascriptDir = $extra['javascript-dir'];
         } else {
-	    var_dump($this->composer);
-            throw new \InvalidArgumentException("javascript-dir must be defined in extra");
+            throw new \InvalidArgumentException("javascript-dir must be defined in extra (root repository)");
         }
         
-
     }
 
     /**
