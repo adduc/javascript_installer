@@ -2,6 +2,7 @@
     "name": "adduc/javascript_installer",
     "description": "Javascript file management for composer",
     "type": "composer-installer",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "John Long",
