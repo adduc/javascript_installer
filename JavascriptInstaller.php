@@ -19,7 +19,7 @@ class JavascriptInstaller extends LibraryInstaller {
      * {@inheritDoc}
      */
     public function supports($packageType) {
-        return 'javascript-installer' === $packageType;
+        return 'javascript-library' === $packageType;
     }
 
 }
