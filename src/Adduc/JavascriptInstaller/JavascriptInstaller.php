@@ -15,6 +15,7 @@ class JavascriptInstaller extends LibraryInstaller {
         if(isset($extra['javascript-dir'])) {
             return $extra['javascript-dir'];
         } else {
+            var_dump($extra);
             throw new \InvalidArgumentException("javascript-dir must be defined in extra");
         }
     }
