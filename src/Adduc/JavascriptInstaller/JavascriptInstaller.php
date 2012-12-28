@@ -19,7 +19,8 @@ class JavascriptInstaller extends LibraryInstaller {
      * {@inheritDoc}
      */
     public function supports($packageType) {
-        echo "Called!";
+        echo "Package Type is {$packageType}\n";
+        echo "Matches? " . ('javascript-library' === $packageType ? 'Yes' : 'No') . "\n";
         return 'javascript-library' === $packageType;
     }
 
