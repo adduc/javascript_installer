@@ -1,0 +1,13 @@
+{
+    "name": "adduc/javascript_installer",
+    "description": "Javascript file management for composer",
+    "authors": [
+        {
+            "name": "John Long",
+            "email": "a@88k.us"
+        }
+    ],
+    "require": {
+
+    }
+}
