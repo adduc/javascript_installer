@@ -12,6 +12,9 @@
     "autoload": {
         "files": ["JavascriptInstaller.php"]
     },
+    "extra": {
+        "class": "Adduc\\JavascriptInstaller\\JavascriptInstaller"
+    },
     "require": {
 
     }
