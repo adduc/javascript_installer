@@ -10,10 +10,10 @@
     ],
     "license": "LGPL-3.0+",
     "autoload": {
-        "files": ["JavascriptInstaller.php"]
+        "files": ["./JavascriptInstaller.php"]
     },
     "extra": {
-        "class": "Adduc\\JavascriptInstaller\\JavascriptInstaller"
+        "class": "\\Adduc\\JavascriptInstaller\\JavascriptInstaller"
     },
     "require": {
 
